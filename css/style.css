@@ -72,6 +72,7 @@ body {
     border-bottom: solid 3px #f38181;
     opacity: 1;
     width: 50%;
+    opacity: 0.4s;
 }
 /* main */
 .main {
@@ -247,6 +248,9 @@ div .team-img {
     transition: opacity 0.3s;
 }
 .team-img:hover::before {
+    opacity: 1;
+}
+.team-img:hover > .social{
     opacity: 1;
 }
 .social {
