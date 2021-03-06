@@ -194,6 +194,8 @@ form {
 input {
     padding: 11px 10px;
     border: 1px solid #b6b6b6;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 input[placeholder] {
     font-size: 14px;
@@ -232,9 +234,6 @@ div .team-img {
     transition: opacity 0.3s;
 }
 .team-img:hover::before {
-    opacity: 1;
-}
-.team-img:hover > .social {
     opacity: 1;
 }
 .social {
