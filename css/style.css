@@ -58,22 +58,38 @@ body {
     position: relative;
     text-align: center;
 }
-.menu li a:after{
+.menu li a::after {
     content: '';
     position: absolute;
     display: block;
     bottom: 0;
-    width: 0;
+    left: 50%;
+    width: 0px;
     height: 3px;
     background: #f38181;
+    transition: width 0.3s;
+    opacity: 0;
+}
+.menu li a:hover::after,
+.menu li a:focus::after {
+    width: 50%;
+    transform: translate(-50%);
+    opacity: 1;
+    color: #f38181;
 }
 .menu li a:hover {
+    color: #F38181;
+}
+/*
+.menu li a:hover >  {
     color: #f38181;
     border-bottom: solid 3px #f38181;
     opacity: 1;
     width: 50%;
     opacity: 0.4s;
-}
+} */
+
+
 /* main */
 .main {
     text-align: center;
