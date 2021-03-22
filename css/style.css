@@ -114,7 +114,6 @@ body {
 }
 .serv {
     width: 100%;
-    margin-top: 65px;
     display: flex;
     flex-wrap: wrap ;
     list-style: none;
@@ -125,6 +124,8 @@ body {
     align-items: flex-start;
     padding: 0 35px;
     display: flex;
+    margin-top: 65px;
+    margin-bottom: 35px;
 }
 .serv div {
     padding-left: 20px;
@@ -143,12 +144,12 @@ body {
     font-size: 15px;
     line-height: 22px;
     color: #b6b6b6;
-}
+}/* 
 .serv :nth-child(n+4) {
     margin-top: 100px;
-}
+} */
 .teamm {
-    margin-top: 100px;
+    margin-top: 65px;
 }
 .text {
     margin-top: 45px;
@@ -167,10 +168,12 @@ body {
     margin-right: auto;
     display: flex;
     margin-bottom: 80px;
+    width: 100%;
 }
 .team div {
     width: 33.33%;
-    margin-right: 30px;
+    margin-left: 5px;
+    margin-right: 15px;
     text-align: center;
 }
 .team h3 {
@@ -190,6 +193,9 @@ body {
     line-height: 18px;
     text-align: center;
     color: #b6b6b6;
+}
+.team-img img{
+    width: 100%;
 }
 /* footer */
 .footer {
@@ -224,6 +230,7 @@ input {
     border: 1px solid #b6b6b6;
     margin-top: 10px;
     margin-bottom: 10px;
+    height: 40px;
 }
 input[placeholder] {
     font-size: 14px;
@@ -255,8 +262,8 @@ div .team-img {
     position: absolute;
     top: -10px;
     bottom : 10px;
-    width: 380px;
-    height: 470px;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, rgba(239, 139, 138, 0.8) 0%, rgba(229, 207, 130, 0.8) 100%);
     opacity: 0;
     transition: opacity 0.3s;
@@ -295,6 +302,46 @@ div .team-img {
     align-items: center;
     justify-content: center;
 }
+/* адапт */
+@media (max-width: 1199px) {
+    .header {
+        padding: 35px 15px;
+    }
+    .text {
+        padding: 0 15px;
+    }
+    .team {
+        padding: 0 15px;
+    }
+    .footer {
+        padding: 0 15px;
+    }
+    }
+@media (max-width: 768px) {
+    .serv li {
+        width: 50%;
+    } 
+    .team {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .team .adapt {
+        width: 45%;
+    }
+}
+@media (max-width: 450px) {
+    .serv li {
+        width: 100%;
+    }
+    .team .adapt {
+        width: 100%;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+
+} 
+
 
 
 
